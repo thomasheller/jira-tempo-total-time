@@ -16,7 +16,7 @@ var day = now.getDate();
 if (month < 10) month = '0' + month;
 if (day < 10) day = '0' + day;
 var today = year + '-' + month + '-' + day;
-var url = jiraBaseURL + '/secure/TempoUserBoard!timesheet.jspa?userId=' + jiraUserID + '&filterIds=-1001&use-ISO8061-week-numbers=true&period=&periodType=FLEX&periodView=DATES&from=' + jiraStartDate + '&to=' + today + '&exact=&span=24'
+var url = jiraBaseURL + '/secure/TempoUserBoard!worklogs.jspa?userId=' + jiraUserID + '&filterIds=-1001&use-ISO8061-week-numbers=true&period=&periodType=FLEX&periodView=DATES&from=' + jiraStartDate + '&to=' + today + '&exact=&span=24'
 console.log(url);
 document.location=url;
 
